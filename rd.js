@@ -1,5 +1,5 @@
 var ac="https://www.baidu.com/"  ;
-var  cs=document.getElementsById("dd")
+var  cs=document.getElementById("dd")
 //setTimeout("aco()","3000"); 
 alert("即将跳转")
 alert(cs)
