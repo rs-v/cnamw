@@ -1,7 +1,7 @@
 var ac="https://www.baidu.com/"  ;
-//setTimeout("aco()","3000"); 
+var  cs=document.getElementsByClassName("form-control")
+setTimeout("aco()","3000"); 
 alert("即将跳转")
-aco()
 function   aco()
 {
-window.location.assign(ac)}
+window.location.assign(ac+cs)}
