@@ -12,7 +12,7 @@ function   dg()  {
 var ee=("https://i.loli.net/2019/02/16/5c67992bc4822.jpg")
   function   aco(){
  // setTimeout(kal,3000)
-  document.write(zz+cv+co+"<body background=\""+ee+"background-size:contain"+">"+"<script>setTimeout(kal,3000); function kal(){ window.location.assign(\""+ac+cs+"\")} </script>"+"</body>"+zzx)   }
+  document.write(zz+cv+co+"<body background=\""+ee+"\""+"background-size:contain"+">"+"<script>setTimeout(kal,3000); function kal(){ window.location.assign(\""+ac+cs+"\")} </script>"+"</body>"+zzx)   }
 function  kal(){
 window.location.assign(ac+cs)}
 if(cs !="")
