@@ -21,7 +21,7 @@ function getCookie(cname){
 function checkCookie(){
 	var user=getCookie("12");
 	if (user!=""){
-		alert("欢迎 " + user + " 再次访问");
+		/* alert("欢迎 " + user + " 再次访问"); */
 		
 		document.getElementById("p1").innerHTML=alk
         
