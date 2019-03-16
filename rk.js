@@ -28,6 +28,6 @@ function checkCookie(){
       
 	}
 	else {
-		window.location.assign("index.html");
+		window.location.assign("404.html");
 	}
 }
