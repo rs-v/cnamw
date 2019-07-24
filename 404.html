@@ -30,13 +30,26 @@ var _hmt = _hmt || [];
 		bodyBgs[7]  ="https://code.aliyun.com/w.d/me/raw/master/ali.jpg";
         bodyBgs[8]  ="https://code.aliyun.com/w.d/me/raw/master/136.jpg";
         var randomBgIndex = Math.round( Math.random() * 8 );
-    //输出随机的背景图
-        document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ')  };background-size: 100%</style>');
-    //]]>
+		
+		
+		if (randomBgIndex ==6){
+		document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ')  };</style>');
+		document.write('<body style = "background-size:100%"></body>')
+		}
+        else if(randomBgIndex==3){document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ')  };</style>');
+		document.write('<body style = "background-size:100%"></body>')}
+		else if(randomBgIndex==4){document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ')  };</style>');
+		document.write('<body style = "background-size:100%"></body>')}
+		else if(randomBgIndex==8){document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ')  };</style>');
+		document.write('<body style = "background-size:100%"></body>')}
+		else 
+		{ document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ')  };background-size: 100%</style>');
+		}
+    
     </script>
 </head>
 <div id="p1"></div>
-<body  >
+<body>
 
 
 <h1>安全验证2019copyright@黑臻</h1>
