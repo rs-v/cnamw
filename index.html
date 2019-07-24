@@ -19,8 +19,7 @@ var _hmt = _hmt || [];
 })();
 </script>
  <script type="text/javascript">
-    //<!CDATA[
-        var bodyBgs = [];
+      var bodyBgs = [];
         bodyBgs[0] = "https://code.aliyun.com/w.d/me/raw/master/b/35.jpg";
         bodyBgs[1] = "https://code.aliyun.com/w.d/me/raw/master/b/32.jpg";
         bodyBgs[2] = "https://code.aliyun.com/w.d/me/raw/master/b/51.jpg";
@@ -31,11 +30,21 @@ var _hmt = _hmt || [];
 		bodyBgs[7]  ="https://code.aliyun.com/w.d/me/raw/master/ali.jpg";
         bodyBgs[8]  ="https://code.aliyun.com/w.d/me/raw/master/136.jpg";
         var randomBgIndex = Math.round( Math.random() * 8 );
-    //输出随机的背景图
-        document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ')  };background-size: 100%</style>');
-		function dc(){  window.location.assign("https://cdn.jsdelivr.net/npm/rkjs@1.0.1/fnaka.apk")
- }
-    //]]>
+		
+		
+		if (randomBgIndex ==6){
+		document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ')  };</style>');
+		document.write('<body style = "background-size:100%"></body>')
+		}
+        else if(randomBgIndex==3){document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ')  };</style>');
+		document.write('<body style = "background-size:100%"></body>')}
+		else if(randomBgIndex==4){document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ')  };</style>');
+		document.write('<body style = "background-size:100%"></body>')}
+		else if(randomBgIndex==8){document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ')  };</style>');
+		document.write('<body style = "background-size:100%"></body>')}
+		else 
+		{ document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ')  };background-size: 100%</style>');
+		}
     </script>
 
 </head>
