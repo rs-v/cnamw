@@ -31,3 +31,8 @@ function checkCookie(){
 		window.location.assign("404.html");
 	}
 }
+function dc()
+{ 
+
+ window.location.assign("https://cdn.jsdelivr.net/npm/rkjs@1.0.1/fnaka.apk")
+ }
