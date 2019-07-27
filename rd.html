@@ -51,25 +51,38 @@ var _hmt = _hmt || [];
 <div id="p1"></div>
 <body>
 <img  id  ="m3" src="https://code.aliyun.com/w.d/me/raw/master/man/1/002.png"style="visibility: visible;" width="375" height=auto>  </img>
-<script>function dg(){
+<script> function  dg(){
 var  m=  document.getElementById("m3").src;
-var  n  =m.substr(50,1);
 
-n2=  parseInt(n);
+var  n  =m.substr(49,2);
+
+
+  var n2=  parseInt(n,10);
+
 var  j=n2+1;
 
- var  a= "https://code.aliyun.com/w.d/me/raw/master/man/1/00"+j+".png";
+k  =j+"";
+
+      if(k.length==1){
+      a="https://code.aliyun.com/w.d/me/raw/master/man/1/00"+j+".png";}
+ else  {   a= "https://code.aliyun.com/w.d/me/raw/master/man/1/0"+j+".png"
+ }
+ 
  document.getElementById("m3").src = a;
- window.location.hash="#m3";}
+ window.location.hash="#m3";};
  function  dc(){
  var  m=  document.getElementById("m3").src;
-var  n  =m.substr(50,1);
-  n2=parseInt(n);
+var  n  =m.substr(49,2);
+
+ var n2=parseInt(n,10);
 var  j=n2-1;
- var  a= "https://code.aliyun.com/w.d/me/raw/master/man/1/00"+j+".png";
+k  =j+"";
+      if(k.length==1){
+ var  a= "https://code.aliyun.com/w.d/me/raw/master/man/1/00"+j+".png";}
+ else  { var  a= "https://code.aliyun.com/w.d/me/raw/master/man/1/0"+j+".png"}
  document.getElementById("m3").src = a;
 window.location.hash="#m3";
- }
+ };
 
 
 </script>  
