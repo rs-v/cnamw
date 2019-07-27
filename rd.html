@@ -69,7 +69,7 @@ k  =j+"";
 var  j=n2+1;
 
 k  =j+"";
-alert(k)
+
 
       if(k.length==1){
       a="https://code.aliyun.com/w.d/me/raw/master/man/"+z+"/00"+j+".png";}
@@ -81,7 +81,8 @@ alert(k)
  window.location.hash="#m3";};
  function  dc(){
  var  m=  document.getElementById("m3").src;
-var  n  =m.substr(49,2);
+dv=m.indexOf("0")
+var  n  =m.substr(dv+1,2);
 k  =window.location.search
 b=k.indexOf("?")
 z=k.substr(b+1,2)
