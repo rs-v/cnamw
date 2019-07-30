@@ -24,7 +24,8 @@ function checkCookie(){
 		/* alert("欢迎 " + user + " 再次访问"); */
 		
 		document.getElementById("p1").innerHTML=alk
-		if (user==22p){document.title=("Svip致😀年轻的自己👍")}
+		if (user=="22p")
+		{document.title=("Svip致😀年轻的自己👍")}
         
       
 	}
