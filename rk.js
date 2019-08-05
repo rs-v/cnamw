@@ -23,9 +23,9 @@ function checkCookie(){
 	if (user!=""){
 		/* alert("欢迎 " + user + " 再次访问"); */
 		
-		document.getElementById("p1").innerHTML=alk
+		$("#p1").load("")
 		if (user=="22p")
-		{document.title=("Svip致😀年轻的自己👍")}
+		{document.title=("SVIP致😀年轻的自己👍")}
         
       
 	}
