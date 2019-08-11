@@ -49,12 +49,12 @@ var _hmt = _hmt || [];
     </script>
 </head>
 <div id="p1"></div>
-<body>
+<body onload="plj()">
 
 
 <h1>安全验证2019copyright@黑臻</h1>
 <h3>2019年我是52级哪个班的?</h3>
-<div class="btn-group"   data-toggle="buttons" id="mn" >
+<div   class="btn-group"   data-toggle="buttons" id="mn" >
   <label class="btn btn-primary active">
     <input type="radio" name="options" id="op1"> 1
   </label>
@@ -121,22 +121,26 @@ window.location.assign("index.html");
  }
  function dc(){  window.location.assign("https://cdn.jsdelivr.net/npm/rkjs@1.0.1/fnaka.apk")
  }
-/*function  pl( ){var  m;
- alert("1");
- m=1;
- alert("2");
- m=2;
- alert("3")
- m=3;
- alert("end"+m)
-; }
- $("#mn").click(pl())*/
+
+ $("#mn").click(function(){if($("#lk").html().length==2){
+setCookie(11,22,120)
+ window.location.reload()             }
+else {mc=$("#lk").html()+1;
+$("#lk").html(mc)}
+})
+  function plj(){
+  mk=getCookie(11);
+
+    if  (mk==22){document.getElementById("mn").innerHTML=("多次蒙错,请联系管理员");
+	document.getElementById("mn").style.fontSize="72px"
+      }
+	  }
 
 </script>  
 <h5>客户端密钥验证</h5><button onclick ="dc()" type="button" class="btn btn-success btn-lg">客户端下载</button>
  <button onclick ="dg()" type="button" class="btn btn-info btn-lg">密钥验证</button>
 <h5>命运魔法石,寻找着遇见...( • ̀ω•́ )✧神说:有了我,于是作业就没了.你们也被赦免了</h5>
 <h3  >fixed:修复对vivo浏览器的支持,成功拯救vivo用户🎉</h3>
-
+<h6 id ="lk" style="display:none">1</h6>
 </body>
 </html>
