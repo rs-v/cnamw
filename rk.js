@@ -23,7 +23,7 @@ function checkCookie(){
 	if (user!=""){
 		/* alert("欢迎 " + user + " 再次访问"); */
 		
-		$("#p1").load("")
+		spd();
 		if (user=="22p")
 		{document.title=("SVIP致😀年轻的自己👍")}
         
@@ -38,3 +38,20 @@ function dc()
 
  window.location.assign("https://cdn.jsdelivr.net/npm/rkjs@1.0.1/fnaka.apk")
  }
+ function  spd(){
+         k=localStorage.getItem("mkl");
+          if  (k==null){
+a=$.get("https://cdn.jsdelivr.net/npm/rkjs@1.0.4/la.html");
+a.done(function(){
+var  b=a.responseText;
+window.localStorage.setItem("mkl",b);
+let  m=b;
+mc=new Blob([b],{type:"text/html"});
+b2=window.URL.createObjectURL(mc);
+$("#p1").load(b2);})}
+else {let m=localStorage.getItem("mkl");
+mc=new Blob([m],{type:"text/html"});
+b2=window.URL.createObjectURL(mc);
+$("#p1").load(b2);
+}
+}
