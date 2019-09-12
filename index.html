@@ -37,16 +37,40 @@ style="background-size:cover;background-repeat:no-repeat;">
 
  <div id="p1"  style="display:flex;flex-wrap:wrap;width:100%;height:50%">
 </div>
+<div id="btc">
+</div>
 
-
+<style>
+#btc{background:url(https://code.aliyun.com/w.d/me/raw/master/fengche.png);
+  width:100px;
+  height:100px;
+  opacity:0.6;
+  background-size:cover;
+  animation:world 3s linear infinite;
+  position:fixed;
+  right:0px;
+  top:4px;
+  z-index:10000;
+  
+ }
+@keyframes world
+{
+  from  {transform:rotate(0deg);}
  
-<h5>命运魔法石,寻找着遇见...( • ̀ω•́ )✧神说:有了我,于是作业就没了.你们也被赦免了</h5>
+    to{transform:rotate(360deg);}
+}
+</style>
+<script>
+document.getElementById("btc").addEventListener("click",function(){document.getElementById("mulu").style.display="block";setTimeout(function(){document.getElementById("mulu").style.display="none"},2000)})
+</script>
+ 
 
-<p  style='color:red;position:center-right'>这是一个公益网站,本站由田佳欣赞助</p>
-<div style="position:absolute; left:0px; top;0px">
+
+
+<div id="mulu" style="position:absolute; left:0px; top:0px;display:none">
 
 <div class="alert alert-success" role="alert"><a href="http://18comic.pro/" class="alert-link" >本子-辉哥赞助</a></div>
-<div class="alert alert-primary" role="alert"><a href="about.html" target="_blank"style="color:green" >关于</a></div>
+<div class="alert alert-primary" role="alert"><a href="about.html" target="_blank"style="color:green" >关于<small>命运魔法石,寻找着遇见...( • ̀ω•́ )✧神说:有了我,于是作业就没了.你们也被赦免了</small></a></div>
 
 <div class="alert alert-success" role="alert">
   这是一个 <a href="http://includelove.mikecrm.com/6rxRuXl" class="alert-link">SVIP功能调查</a>
