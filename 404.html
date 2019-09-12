@@ -18,33 +18,13 @@ var _hmt = _hmt || [];
 })();
 </script>
 <script type="text/javascript">
-    //<!CDATA[
-        var bodyBgs = [];
-        bodyBgs[0] = "https://code.aliyun.com/w.d/me/raw/master/b/35.jpg";
-        bodyBgs[1] = "https://code.aliyun.com/w.d/me/raw/master/b/32.jpg";
-        bodyBgs[2] = "https://code.aliyun.com/w.d/me/raw/master/b/51.jpg";
-        bodyBgs[3] = "https://code.aliyun.com/w.d/me/raw/master/b/l1.jpg";
-        bodyBgs[4] = "https://code.aliyun.com/w.d/me/raw/master/45.jpg";
-		bodyBgs[5]  ="https://code.aliyun.com/w.d/me/raw/master/27i.jpg";
-		bodyBgs[6]  ="https://code.aliyun.com/w.d/me/raw/master/27.jpg";
-		bodyBgs[7]  ="https://code.aliyun.com/w.d/me/raw/master/ali.jpg";
-        bodyBgs[8]  ="https://code.aliyun.com/w.d/me/raw/master/136.jpg";
-        var randomBgIndex = Math.round( Math.random() * 8 );
+      
+      var random = Math.round( Math.random() * 17 );
+       var bnd="https://code.aliyun.com/w.d/me/raw/master/w/"+rand+".jpg";
 		
+        document.write('<style>body{background:url('+bnd+') ;background-attachment:fixed }')
+	
 		
-		if (randomBgIndex ==6){
-		document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') ;background-attachment:fixed };</style>');
-		document.write('<body style = "background-size:100%"></body>')
-		}
-        else if(randomBgIndex==3){document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ')  ;background-attachment:fixed};</style>');
-		document.write('<body style = "background-size:100%"></body>')}
-		else if(randomBgIndex==4){document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ');background-attachment:fixed  };</style>');
-		document.write('<body style = "background-size:100%"></body>')}
-		else if(randomBgIndex==8){document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') ;background-attachment:fixed };</style>');
-		document.write('<body style = "background-size:100%"></body>')}
-		else 
-		{ document.write('<style>body{background:url(' + bodyBgs[randomBgIndex] + ') ;background-attachment:fixed };background-size: 100%</style>');
-		}
     
     </script>
 	
@@ -60,6 +40,12 @@ var _hmt = _hmt || [];
 	
 	
 	}
+  #blk{
+    background-color: black;
+    opacity: 0.8;
+    display: none;
+
+  }
 	#nvc{position: fixed;
    left: 30px;
    width: 300px;
@@ -73,12 +59,12 @@ var _hmt = _hmt || [];
    padding-top: 8px;
    opacity: 0.8;
    top: 25%;
-   display: none;
+   
  }
 	</style>
 </head>
 <div id="p1"></div>
-<body onload="plj()">
+<body onload="plj()"style="background-size:cover">
 <div  id="hl"></div>
 
 <h1>安全验证2019copyright&copy;黑臻</h1>
@@ -120,7 +106,7 @@ var _hmt = _hmt || [];
 
 <script>
 function  duo(){
-  document.getElementById("nvc").style.display="block";
+  document.getElementById("blk").style.display="block";
   setCookie(12,22,2);
 }
  function  bk(){window.location.assign("index.html");
@@ -159,8 +145,9 @@ $("#lk").html(mc)}
 <h5>命运魔法石,寻找着遇见...( • ̀ω•́ )✧神说:有了我,于是作业就没了.你们也被赦免了</h5>
 <h3  >fixed:修复对vivo浏览器的支持,成功拯救vivo用户🎉</h3>
 <h6 id ="lk" style="display:none">1</h6>
-<div  id="nvc"><p  id="pp">确认您已放弃所有,承担所有访问本网站的责任</p>
-  <button type="button" style="position:absolute;bottom:3%;left:20%;"class="btn btn-danger" onclick="prp()" >退出</button> <button type="button"style="position:absolute;bottom:3%;right:20%;" class="btn btn-info"onclick="bk()">确定</button>
-</div>
+<div id="blk" >
+  <div  id="nvc"><p  id="pp">确认您已放弃所有,承担所有访问本网站的责任</p>
+    <button type="button" style="position:absolute;bottom:3%;left:20%;"class="btn btn-danger" onclick="prp()" >退出</button> <button type="button"style="position:absolute;bottom:3%;right:20%;" class="btn btn-info"onclick="bk()">确定</button>
+  </div></div>
 </body>
 </html>
